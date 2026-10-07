@@ -1,0 +1,75 @@
+/* ==========================================================================
+   2. СІТКА ТА БАЗОВИЙ LAYOUT (Reset, Контейнери та CSS Grid)
+   ========================================================================== */
+
+/* Базове скидання стилів (Reset) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Контейнер для центрування контенту */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Базові секції та заголовки */
+.section {
+  padding: 45px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto 35px auto;
+  font-size: 16px;
+}
+
+/* Модульні сітки CSS Grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}

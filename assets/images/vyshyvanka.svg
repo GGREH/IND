@@ -1,0 +1,82 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='48' height='20' viewBox='0 0 48 20'>
+  <rect width='48' height='20' fill='#f4faf5'/>
+  <!-- Верхня і нижня декоративні смуги -->
+  <line x1='0' y1='1' x2='48' y2='1' stroke='#98FB98' stroke-width='1.5'/>
+  <line x1='0' y1='19' x2='48' y2='19' stroke='#98FB98' stroke-width='1.5'/>
+  
+  <!-- Центральний великий ромб вишиванки (хрестики 2x2) -->
+  <!-- Зовнішній контур ромба (#4d8f5b) -->
+  <rect x='23' y='2' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='21' y='4' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='25' y='4' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='19' y='6' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='27' y='6' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='17' y='8' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='29' y='8' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='15' y='10' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='31' y='10' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='17' y='12' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='29' y='12' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='19' y='14' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='27' y='14' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='21' y='16' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='25' y='16' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='23' y='18' width='2' height='2' fill='#4d8f5b'/>
+
+  <!-- Внутрішній контур ромба (#98FB98) -->
+  <rect x='23' y='5' width='2' height='2' fill='#98FB98'/>
+  <rect x='21' y='7' width='2' height='2' fill='#98FB98'/>
+  <rect x='25' y='7' width='2' height='2' fill='#98FB98'/>
+  <rect x='19' y='10' width='2' height='2' fill='#98FB98'/>
+  <rect x='27' y='10' width='2' height='2' fill='#98FB98'/>
+  <rect x='21' y='13' width='2' height='2' fill='#98FB98'/>
+  <rect x='25' y='13' width='2' height='2' fill='#98FB98'/>
+  <rect x='23' y='15' width='2' height='2' fill='#98FB98'/>
+
+  <!-- Центральний елемент: зерно/хрестик (#233326 та #e5c378) -->
+  <rect x='23' y='8' width='2' height='2' fill='#233326'/>
+  <rect x='23' y='12' width='2' height='2' fill='#233326'/>
+  <rect x='21' y='10' width='2' height='2' fill='#233326'/>
+  <rect x='25' y='10' width='2' height='2' fill='#233326'/>
+  <rect x='23' y='10' width='2' height='2' fill='#e5c378'/>
+
+  <!-- З'єднувальні елементи по краях (при repeat-x утворюють другий ромб) -->
+  <rect x='47' y='10' width='1' height='2' fill='#4d8f5b'/>
+  <rect x='0' y='10' width='1' height='2' fill='#4d8f5b'/>
+  
+  <rect x='45' y='8' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='1' y='8' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='45' y='12' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='1' y='12' width='2' height='2' fill='#4d8f5b'/>
+
+  <rect x='43' y='6' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='3' y='6' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='43' y='14' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='3' y='14' width='2' height='2' fill='#4d8f5b'/>
+
+  <rect x='41' y='4' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='5' y='4' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='41' y='16' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='5' y='16' width='2' height='2' fill='#4d8f5b'/>
+
+  <rect x='39' y='2' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='7' y='2' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='39' y='18' width='2' height='2' fill='#4d8f5b'/>
+  <rect x='7' y='18' width='2' height='2' fill='#4d8f5b'/>
+
+  <!-- Внутрішні точки бічного ромба -->
+  <rect x='47' y='8' width='1' height='2' fill='#233326'/>
+  <rect x='0' y='8' width='1' height='2' fill='#233326'/>
+  <rect x='47' y='12' width='1' height='2' fill='#233326'/>
+  <rect x='0' y='12' width='1' height='2' fill='#233326'/>
+  <rect x='45' y='10' width='2' height='2' fill='#233326'/>
+  <rect x='1' y='10' width='2' height='2' fill='#233326'/>
+  <rect x='47' y='10' width='1' height='2' fill='#e5c378'/>
+  <rect x='0' y='10' width='1' height='2' fill='#e5c378'/>
+
+  <!-- Маленькі проміжні колоски зверху і знизу між ромбами -->
+  <rect x='11' y='2' width='2' height='2' fill='#98FB98'/>
+  <rect x='11' y='18' width='2' height='2' fill='#98FB98'/>
+  <rect x='35' y='2' width='2' height='2' fill='#98FB98'/>
+  <rect x='35' y='18' width='2' height='2' fill='#98FB98'/>
+</svg>
