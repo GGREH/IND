@@ -9,11 +9,18 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-family);
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 img {
@@ -38,6 +45,17 @@ a {
 /* Базові секції та заголовки */
 .section {
   padding: 45px 0;
+  transition: background-color 0.25s ease;
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section-banner {
+  background-color: var(--color-primary-light);
+  border-bottom: 1px solid var(--color-border);
+  padding: 35px 0;
 }
 
 .section-title {

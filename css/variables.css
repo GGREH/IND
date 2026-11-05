@@ -1,20 +1,84 @@
 /* ==========================================================================
-   1. CSS ЗМІННІ (Колірна палітра за варіантом №26 та шрифти)
+   1. CSS ЗМІННІ (Колірна палітра за варіантом №26, Зауваження №9 та шрифти)
    ========================================================================== */
 
 :root {
-  /* Головний колір за варіантом №26 */
+  /* Головний колір за варіантом №26 (Desktop & Tablet — Light Mode) */
   --color-primary: #98FB98;          /* Блідо-зелений з сірим підтоном */
-  --color-primary-dark: #68ad68;     /* Темніший відтінок для наведення */
-  --color-primary-light: #e6f9e6;    /* Світлий відтінок для фонів */
+  --color-primary-dark: #68ad68;     /* Темніший відтінок для наведення та акцентів */
+  --color-primary-light: #e6f9e6;    /* Світлий відтінок для фонів Hero/банерів */
+  --color-accent: #98FB98;           /* Акцентний колір кнопок та цінників */
+  --color-accent-hover: #68ad68;     /* Акцент при наведенні */
+  --color-accent-text: #142416;      /* Текст на акцентних кнопках і плашках */
+  --color-hero-span: #68ad68;        /* Колір виділення у заголовку Hero */
+  --color-tag-border: #68ad68;       /* Обводка тегів (hero-tag) */
+  --color-cat-border: #68ad68;       /* Ліва лінія заголовків категорій меню */
 
-  /* Основні кольори */
-  --color-text: #233326;             /* Темний колір тексту */
+  /* Основні кольори інтерфейсу (Light Mode) */
+  --color-text: #233326;             /* Темний колір основного тексту */
   --color-text-muted: #5e6d61;       /* Другорядний сіро-зелений текст */
   --color-bg: #f8faf8;               /* Світлий сучасний фон сторінки */
-  --color-white: #ffffff;            /* Білий для карток та блоків */
-  --color-border: #dce5dc;           /* Колір рамок */
+  --color-bg-alt: #ffffff;           /* Альтернативний фон секцій */
+  --color-surface: #ffffff;          /* Фон карток, шапки, форм та підвалу */
+  --color-white: #ffffff;            /* Чистий білий */
+  --color-border: #dce5dc;           /* Колір рамок та розділювачів */
+  --color-input-bg: #ffffff;         /* Фон полів вводу */
+  --color-input-border: #dce5dc;     /* Рамка полів вводу */
+  --color-placeholder: #8fa396;      /* Колір підказок у полях вводу */
+  --color-hero-img-border: #ffffff;  /* Рамка головного фото */
 
-  /* Шрифти */
-  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Шрифти (відповідно до макету Figma) */
+  --font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==========================================================================
+   ТЕМНА НЕОНОВО-ЛАЙМОВА ТЕМА (Зауваження до дизайну №9 — Компромісний рефакторинг)
+   Застосовується автоматично на Mobile (<= 767px) у responsive.css
+   або при ручному перемиканні теми [data-theme="dark"]
+   ========================================================================== */
+[data-theme="dark"] {
+  --color-primary: #98FB98;          /* Збережено фірмовий колір №26 у лого та меню */
+  --color-primary-dark: #c6ff1a;     /* Неоново-лаймовий акцент замість темно-зеленого */
+  --color-primary-light: #13241a;    /* Темний смарагдовий фон Hero-блоків */
+  --color-accent: #c6ff1a;           /* Кислотно-лаймовий колір кнопок і цін (#C6FF1A з Figma) */
+  --color-accent-hover: #d8ff5c;     /* Світліший неон при наведенні */
+  --color-accent-text: #0d1510;      /* Контрастний темний текст на неонових кнопках */
+  --color-hero-span: #c6ff1a;        /* Неоновий акцент у заголовку Hero */
+  --color-tag-border: #c6ff1a;       /* Неонова рамка тегів */
+  --color-cat-border: #c6ff1a;       /* Неонова лінія категорій меню */
+
+  --color-text: #e9f5ec;             /* Світлий м'ятно-білий текст (#E9F5EC з Figma) */
+  --color-text-muted: #a9bdb0;       /* Приглушений сіро-зелений текст (#A9BDB0 з Figma) */
+  --color-bg: #0d1510;               /* Глибокий темний інверсований фон (#0D1510 з Figma) */
+  --color-bg-alt: #101a14;           /* Альтернативний темний фон секцій (#101A14 з Figma) */
+  --color-surface: #16221a;          /* Фон карток, шапки, форми та підвалу (#16221A з Figma) */
+  --color-border: #2a3d2f;           /* Темно-зелена обводка карток (#2A3D2F з Figma) */
+  --color-input-bg: #0d1510;         /* Темний фон полів форми (#0D1510 з Figma) */
+  --color-input-border: #6b8872;     /* Контрастна рамка полів форми (#6B8872 з Figma) */
+  --color-placeholder: #8fa396;      /* Колір placeholder (#8FA396 з Figma) */
+  --color-hero-img-border: #16221a;  /* Рамка фото у Hero (#16221A з Figma) */
+}
+
+/* Примусова світла тема при ручному виборі на мобільному */
+[data-theme="light"] {
+  --color-primary: #98FB98;
+  --color-primary-dark: #68ad68;
+  --color-primary-light: #e6f9e6;
+  --color-accent: #98FB98;
+  --color-accent-hover: #68ad68;
+  --color-accent-text: #142416;
+  --color-hero-span: #68ad68;
+  --color-tag-border: #68ad68;
+  --color-cat-border: #68ad68;
+  --color-text: #233326;
+  --color-text-muted: #5e6d61;
+  --color-bg: #f8faf8;
+  --color-bg-alt: #ffffff;
+  --color-surface: #ffffff;
+  --color-white: #ffffff;
+  --color-border: #dce5dc;
+  --color-input-bg: #ffffff;
+  --color-input-border: #dce5dc;
+  --color-placeholder: #8fa396;
+  --color-hero-img-border: #ffffff;
 }

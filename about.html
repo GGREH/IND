@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Про нас | Кафе «Жито & М'ята»</title>
+  <title>Про нас | Кафе «Жито &amp; М'ята»</title>
+  <!-- Шрифт Inter відповідно до макету Figma -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Підключення модульних стилів проєкту -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/grid.css">
@@ -22,22 +26,33 @@
     <div class="container header-inner">
       <a href="index.html" class="logo">
         <span class="logo-badge">🌾</span>
-        <span>Жито & М'ята</span>
+        <span>Жито &amp; М'ята</span>
       </a>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Головна</a></li>
-          <li><a href="menu.html" class="nav-link">Меню</a></li>
-          <li><a href="about.html" class="nav-link active">Про нас</a></li>
-          <li><a href="contacts.html" class="nav-link">Контакти</a></li>
-        </ul>
-      </nav>
+      <div class="header-actions">
+        <nav aria-label="Головна навігація">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Головна</a></li>
+            <li><a href="menu.html" class="nav-link">Меню</a></li>
+            <li><a href="about.html" class="nav-link active">Про нас</a></li>
+            <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header-tools">
+          <button type="button" class="tool-btn" id="themeToggleBtn" title="Перемкнути тему (Світла / Темна неонова)">
+            <span id="themeIcon">🌙</span>
+            <span id="themeLabel">Тема</span>
+          </button>
+          <button type="button" class="tool-btn" id="cartOpenBtn" title="Ваше передзамовлення страв">
+            <span>🧺 Замовлення</span>
+            <span class="cart-badge" id="cartCountBadge">0</span>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- Заголовок сторінки -->
-  <section class="section"
-    style="background-color: var(--color-primary-light); border-bottom: 1px solid var(--color-border); padding: 35px 0;">
+  <section class="section section-banner">
     <div class="container" style="text-align: center;">
       <h1 style="font-size: 32px; margin-bottom: 10px;">Про наше кафе</h1>
       <p style="color: var(--color-text-muted);">
@@ -52,7 +67,7 @@
       <div class="grid-2" style="align-items: center;">
         <div>
           <span class="hero-tag">Наша історія</span>
-          <h2 style="font-size: 26px; margin-bottom: 15px;">Як виникла ідея кафе «Жито & М'ята»</h2>
+          <h2 style="font-size: 26px; margin-bottom: 15px;">Як виникла ідея кафе «Жито &amp; М'ята»</h2>
           <p style="margin-bottom: 15px;">
             Ми хотіли створити затишне міське кафе, де можна скуштувати справжній смачний український борщ та домашні
             вареники, але без важкої архаїки та застарілих стереотипів.
@@ -66,7 +81,7 @@
             кольором став ніжний блідо-зелений відтінок.
           </p>
         </div>
-        <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border);">
+        <div class="photo-frame">
           <img src="assets/images/interior.jpg" alt="Інтер'єр ресторану">
         </div>
       </div>
@@ -74,7 +89,7 @@
   </section>
 
   <!-- Цінності закладу -->
-  <section class="section" style="background-color: #ffffff;">
+  <section class="section section-alt">
     <div class="container">
       <h2 class="section-title">Наші головні принципи</h2>
       <p class="section-subtitle">Що для нас найважливіше в роботі щодня.</p>
@@ -108,7 +123,7 @@
   <section class="section">
     <div class="container">
       <div class="grid-2" style="align-items: center;">
-        <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border);">
+        <div class="photo-frame">
           <img src="assets/images/chef.jpg" alt="Шеф-кухар кафе">
         </div>
         <div>
@@ -134,7 +149,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-col">
-          <h4>🌾 Жито & М'ята</h4>
+          <h4>🌾 Жито &amp; М'ята</h4>
           <p style="font-size: 14px; color: var(--color-text-muted);">
             Кафе сучасної української кухні. Свіжі локальні продукти, авторські страви та затишок у центрі міста.
           </p>
@@ -158,7 +173,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Кафе «Жито & М'ята». Всі права захищені.</p>
+        <p>© 2026 Кафе «Жито &amp; М'ята». Всі права захищені.</p>
       </div>
     </div>
   </footer>
@@ -166,6 +181,8 @@
   <!-- Декоративний узор вишиванки знизу -->
   <div class="vyshyvanka-pattern" aria-hidden="true"></div>
 
+  <!-- Підключення основного скрипту JS (Етап 2) -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
